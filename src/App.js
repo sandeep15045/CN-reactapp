@@ -3,7 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const name='Sandeep Kumar'
+  const name='Sandeep Kumar';
+  const loading=true;
+  if(loading){
+    return <h1>Laoding!</h1>
+  }
   return (
     <React.Fragment>
          <h1>hey there</h1>
