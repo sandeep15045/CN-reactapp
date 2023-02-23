@@ -4,13 +4,15 @@ import './App.css';
 
 function App() {
   const name='Sandeep Kumar';
-  const isLoggedin=true;
+  const isLoggedin=false;
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hello {isLoggedin ?name:'World'}
+          {!isLoggedin && <p>Hello World</p>}
+          {isLoggedin && <p>Hello {name}</p>}
+          
         </p>
         <a
           className="App-link"
