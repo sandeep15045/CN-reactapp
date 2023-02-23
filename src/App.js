@@ -4,19 +4,13 @@ import './App.css';
 
 function App() {
   const name='Sandeep Kumar';
-  const loading=true;
-  if(loading){
-    return <h1>Laoding!</h1>
-  }
+  const isLoggedin=true;
   return (
-    <React.Fragment>
-         <h1>hey there</h1>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> Hello World
-          Hello {new Date().toDateString()}
+          hello {isLoggedin ?name:'World'}
         </p>
         <a
           className="App-link"
@@ -28,8 +22,6 @@ function App() {
         </a>
       </header>
     </div>
-    </React.Fragment>
- 
   );
 }
 
